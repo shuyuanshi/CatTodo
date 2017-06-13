@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+  [[FBSDKApplicationDelegate sharedInstance] application:application
+                           didFinishLaunchingWithOptions:launchOptions];
+  if (launchOptions[UIApplicationLaunchOptionsURLKey] == nil) {
+    [FBSDKAppLinkUtility fetchDeferredAppLink:^(NSURL *url, NSError *error) {
+      if (error) {
+        NSLog(@"Received error while fetching deferred app link %@", error);
+      }
+      if (url) {
+//        [[UIApplication sharedApplication] openURL:url];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Received deeplink"
+                                                                       message:url.absoluteString
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+
+        [alert addAction:defaultAction];
+        [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"received deferred deeplink" object:nil userInfo:@{@"url":url.absoluteString}];
+      }
+    }];
+  }
   return YES;
 }
 
@@ -40,6 +63,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  [FBSDKAppEvents activateApp];
 }
 
 
@@ -47,5 +71,23 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+  UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Applink test passed!"
+                                                                 message:url.absoluteString
+                                                          preferredStyle:UIAlertControllerStyleAlert];
+  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * action) {}];
+
+  [alert addAction:defaultAction];
+  [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"received applink" object:nil userInfo:@{@"url":url.absoluteString}];
+  return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                        openURL:url
+                                              sourceApplication:sourceApplication
+                                                     annotation:annotation];
+}
 
 @end

@@ -14,6 +14,23 @@
 		3AC1883E1EEF8B7000456093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC1883C1EEF8B7000456093 /* Main.storyboard */; };
 		3AC188401EEF8B7000456093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC1883F1EEF8B7000456093 /* Assets.xcassets */; };
 		3AC188431EEF8B7000456093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC188411EEF8B7000456093 /* LaunchScreen.storyboard */; };
+		3AC188851EEF91CB00456093 /* CCPCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188701EEF91CB00456093 /* CCPCalendarManager.m */; };
+		3AC188861EEF91CB00456093 /* CCPCalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188721EEF91CB00456093 /* CCPCalendarButton.m */; };
+		3AC188871EEF91CB00456093 /* CCPCalendarCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188741EEF91CB00456093 /* CCPCalendarCellTableViewCell.m */; };
+		3AC188881EEF91CB00456093 /* CCPCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188761EEF91CB00456093 /* CCPCalendarHeader.m */; };
+		3AC188891EEF91CB00456093 /* CCPCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188781EEF91CB00456093 /* CCPCalendarModel.m */; };
+		3AC1888A1EEF91CB00456093 /* CCPCalendarTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1887A1EEF91CB00456093 /* CCPCalendarTable.m */; };
+		3AC1888B1EEF91CB00456093 /* CCPCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1887C1EEF91CB00456093 /* CCPCalendarView.m */; };
+		3AC1888C1EEF91CB00456093 /* NSDate+CCPCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1887E1EEF91CB00456093 /* NSDate+CCPCalendar.m */; };
+		3AC1888D1EEF91CB00456093 /* NSObject+CCPObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188801EEF91CB00456093 /* NSObject+CCPObjc.m */; };
+		3AC1888E1EEF91CB00456093 /* UILabel+CCPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188821EEF91CB00456093 /* UILabel+CCPLabel.m */; };
+		3AC1888F1EEF91CB00456093 /* UIView+CCPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188841EEF91CB00456093 /* UIView+CCPView.m */; };
+		3AC188931EEFABF000456093 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC188921EEFABF000456093 /* StoreManager.m */; };
+		3AC188991EF06A9500456093 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC188951EF06A9500456093 /* Bolts.framework */; };
+		3AC1889A1EF06A9500456093 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC188961EF06A9500456093 /* FBSDKCoreKit.framework */; };
+		3AC1889B1EF06A9500456093 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC188971EF06A9500456093 /* FBSDKLoginKit.framework */; };
+		3AC1889C1EF06A9500456093 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC188981EF06A9500456093 /* FBSDKShareKit.framework */; };
+		3AC1889E1EF08B8F00456093 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC1889D1EF08B8F00456093 /* FBAudienceNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +46,35 @@
 		3AC1883F1EEF8B7000456093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC188421EEF8B7000456093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC188441EEF8B7000456093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC1886F1EEF91CB00456093 /* CCPCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarManager.h; sourceTree = "<group>"; };
+		3AC188701EEF91CB00456093 /* CCPCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarManager.m; sourceTree = "<group>"; };
+		3AC188711EEF91CB00456093 /* CCPCalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarButton.h; sourceTree = "<group>"; };
+		3AC188721EEF91CB00456093 /* CCPCalendarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarButton.m; sourceTree = "<group>"; };
+		3AC188731EEF91CB00456093 /* CCPCalendarCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarCellTableViewCell.h; sourceTree = "<group>"; };
+		3AC188741EEF91CB00456093 /* CCPCalendarCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarCellTableViewCell.m; sourceTree = "<group>"; };
+		3AC188751EEF91CB00456093 /* CCPCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarHeader.h; sourceTree = "<group>"; };
+		3AC188761EEF91CB00456093 /* CCPCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarHeader.m; sourceTree = "<group>"; };
+		3AC188771EEF91CB00456093 /* CCPCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarModel.h; sourceTree = "<group>"; };
+		3AC188781EEF91CB00456093 /* CCPCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarModel.m; sourceTree = "<group>"; };
+		3AC188791EEF91CB00456093 /* CCPCalendarTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarTable.h; sourceTree = "<group>"; };
+		3AC1887A1EEF91CB00456093 /* CCPCalendarTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarTable.m; sourceTree = "<group>"; };
+		3AC1887B1EEF91CB00456093 /* CCPCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarView.h; sourceTree = "<group>"; };
+		3AC1887C1EEF91CB00456093 /* CCPCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPCalendarView.m; sourceTree = "<group>"; };
+		3AC1887D1EEF91CB00456093 /* NSDate+CCPCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CCPCalendar.h"; sourceTree = "<group>"; };
+		3AC1887E1EEF91CB00456093 /* NSDate+CCPCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CCPCalendar.m"; sourceTree = "<group>"; };
+		3AC1887F1EEF91CB00456093 /* NSObject+CCPObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CCPObjc.h"; sourceTree = "<group>"; };
+		3AC188801EEF91CB00456093 /* NSObject+CCPObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CCPObjc.m"; sourceTree = "<group>"; };
+		3AC188811EEF91CB00456093 /* UILabel+CCPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CCPLabel.h"; sourceTree = "<group>"; };
+		3AC188821EEF91CB00456093 /* UILabel+CCPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CCPLabel.m"; sourceTree = "<group>"; };
+		3AC188831EEF91CB00456093 /* UIView+CCPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CCPView.h"; sourceTree = "<group>"; };
+		3AC188841EEF91CB00456093 /* UIView+CCPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCPView.m"; sourceTree = "<group>"; };
+		3AC188911EEFABB900456093 /* StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
+		3AC188921EEFABF000456093 /* StoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
+		3AC188951EF06A9500456093 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		3AC188961EF06A9500456093 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3AC188971EF06A9500456093 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		3AC188981EF06A9500456093 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		3AC1889D1EF08B8F00456093 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC1889C1EF06A9500456093 /* FBSDKShareKit.framework in Frameworks */,
+				3AC188991EF06A9500456093 /* Bolts.framework in Frameworks */,
+				3AC1889A1EF06A9500456093 /* FBSDKCoreKit.framework in Frameworks */,
+				3AC1889E1EF08B8F00456093 /* FBAudienceNetwork.framework in Frameworks */,
+				3AC1889B1EF06A9500456093 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +96,7 @@
 		3AC188241EEF8B7000456093 = {
 			isa = PBXGroup;
 			children = (
+				3AC188941EF06A5400456093 /* Framework */,
 				3AC1882F1EEF8B7000456093 /* CatTodo */,
 				3AC1882E1EEF8B7000456093 /* Products */,
 			);
@@ -61,6 +113,8 @@
 		3AC1882F1EEF8B7000456093 /* CatTodo */ = {
 			isa = PBXGroup;
 			children = (
+				3AC188901EEFAB9F00456093 /* StoreManager */,
+				3AC1884D1EEF919300456093 /* Calendar */,
 				3AC188331EEF8B7000456093 /* AppDelegate.h */,
 				3AC188341EEF8B7000456093 /* AppDelegate.m */,
 				3AC188361EEF8B7000456093 /* FirstViewController.h */,
@@ -82,6 +136,56 @@
 				3AC188311EEF8B7000456093 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AC1884D1EEF919300456093 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1886F1EEF91CB00456093 /* CCPCalendarManager.h */,
+				3AC188701EEF91CB00456093 /* CCPCalendarManager.m */,
+				3AC188711EEF91CB00456093 /* CCPCalendarButton.h */,
+				3AC188721EEF91CB00456093 /* CCPCalendarButton.m */,
+				3AC188731EEF91CB00456093 /* CCPCalendarCellTableViewCell.h */,
+				3AC188741EEF91CB00456093 /* CCPCalendarCellTableViewCell.m */,
+				3AC188751EEF91CB00456093 /* CCPCalendarHeader.h */,
+				3AC188761EEF91CB00456093 /* CCPCalendarHeader.m */,
+				3AC188771EEF91CB00456093 /* CCPCalendarModel.h */,
+				3AC188781EEF91CB00456093 /* CCPCalendarModel.m */,
+				3AC188791EEF91CB00456093 /* CCPCalendarTable.h */,
+				3AC1887A1EEF91CB00456093 /* CCPCalendarTable.m */,
+				3AC1887B1EEF91CB00456093 /* CCPCalendarView.h */,
+				3AC1887C1EEF91CB00456093 /* CCPCalendarView.m */,
+				3AC1887D1EEF91CB00456093 /* NSDate+CCPCalendar.h */,
+				3AC1887E1EEF91CB00456093 /* NSDate+CCPCalendar.m */,
+				3AC1887F1EEF91CB00456093 /* NSObject+CCPObjc.h */,
+				3AC188801EEF91CB00456093 /* NSObject+CCPObjc.m */,
+				3AC188811EEF91CB00456093 /* UILabel+CCPLabel.h */,
+				3AC188821EEF91CB00456093 /* UILabel+CCPLabel.m */,
+				3AC188831EEF91CB00456093 /* UIView+CCPView.h */,
+				3AC188841EEF91CB00456093 /* UIView+CCPView.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		3AC188901EEFAB9F00456093 /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				3AC188911EEFABB900456093 /* StoreManager.h */,
+				3AC188921EEFABF000456093 /* StoreManager.m */,
+			);
+			name = StoreManager;
+			sourceTree = "<group>";
+		};
+		3AC188941EF06A5400456093 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1889D1EF08B8F00456093 /* FBAudienceNetwork.framework */,
+				3AC188951EF06A9500456093 /* Bolts.framework */,
+				3AC188961EF06A9500456093 /* FBSDKCoreKit.framework */,
+				3AC188971EF06A9500456093 /* FBSDKLoginKit.framework */,
+				3AC188981EF06A9500456093 /* FBSDKShareKit.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +219,7 @@
 				TargetAttributes = {
 					3AC1882C1EEF8B7000456093 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T74E9EA86M;
+						DevelopmentTeam = AR98PE88FK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -156,10 +260,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC188861EEF91CB00456093 /* CCPCalendarButton.m in Sources */,
+				3AC188931EEFABF000456093 /* StoreManager.m in Sources */,
+				3AC188891EEF91CB00456093 /* CCPCalendarModel.m in Sources */,
+				3AC1888F1EEF91CB00456093 /* UIView+CCPView.m in Sources */,
+				3AC188851EEF91CB00456093 /* CCPCalendarManager.m in Sources */,
 				3AC1883B1EEF8B7000456093 /* SecondViewController.m in Sources */,
 				3AC188351EEF8B7000456093 /* AppDelegate.m in Sources */,
+				3AC1888C1EEF91CB00456093 /* NSDate+CCPCalendar.m in Sources */,
+				3AC1888E1EEF91CB00456093 /* UILabel+CCPLabel.m in Sources */,
+				3AC1888A1EEF91CB00456093 /* CCPCalendarTable.m in Sources */,
 				3AC188381EEF8B7000456093 /* FirstViewController.m in Sources */,
+				3AC1888D1EEF91CB00456093 /* NSObject+CCPObjc.m in Sources */,
+				3AC188871EEF91CB00456093 /* CCPCalendarCellTableViewCell.m in Sources */,
+				3AC1888B1EEF91CB00456093 /* CCPCalendarView.m in Sources */,
 				3AC188321EEF8B7000456093 /* main.m in Sources */,
+				3AC188881EEF91CB00456093 /* CCPCalendarHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +397,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T74E9EA86M;
+				DEVELOPMENT_TEAM = AR98PE88FK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CatTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CatTodo.CatTodo;
@@ -293,7 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T74E9EA86M;
+				DEVELOPMENT_TEAM = AR98PE88FK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CatTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CatTodo.CatTodo;

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import FBAudienceNetwork;
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UITextViewDelegate, FBAdViewDelegate>
 
 
 @end
